@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,36 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success! | RandstadNV</title>
     <style>
-        /* COLORS & THEME */
         :root {
-            --primary: #00214c; /* Deep Professional Blue */
-            --secondary: #0076d6; /* Brighter Action Blue */
+            --primary: #00214c; 
+            --secondary: #0076d6; 
+            --whatsapp: #25D366;
             --accent: #f2f7ff;
             --text: #333;
         }
 
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: var(--text); background-color: #fff; line-height: 1.6; }
         
-        /* HEADER SECTION */
         header { background: var(--primary); color: white; padding: 60px 20px; text-align: center; }
         .checkmark { font-size: 50px; background: white; color: #28a745; border-radius: 50%; width: 80px; height: 80px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px; }
 
-        /* PROGRESS BAR */
-        .progress-container { width: 80%; max-width: 400px; background: #ddd; margin: 20px auto; border-radius: 10px; height: 10px; }
-        .progress-fill { width: 100%; background: #28a745; height: 100%; border-radius: 10px; transition: width 1s; }
-
-        /* SECTIONS */
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
         .card { background: var(--accent); padding: 25px; border-radius: 12px; border-left: 5px solid var(--secondary); }
         .card h3 { margin-top: 0; color: var(--primary); }
 
-        /* BUTTONS */
-        .btn { display: inline-block; background: var(--secondary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-        .btn:hover { background: var(--primary); }
+        /* BUTTON STYLES */
+        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px; }
+        .btn { display: inline-block; padding: 14px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; text-align: center; min-width: 200px; }
+        
+        .btn-home { background: var(--secondary); color: white; }
+        .btn-home:hover { background: var(--primary); }
+        
+        .btn-share { background: var(--whatsapp); color: white; }
+        .btn-share:hover { opacity: 0.9; }
 
-        /* TABS-STYLE FOOTER */
-        .footer-tabs { border-top: 1px solid #eee; margin-top: 50px; display: flex; justify-content: center; gap: 30px; padding: 20px; background: #fafafa; }
+        .footer-tabs { border-top: 1px solid #eee; margin-top: 50px; display: flex; justify-content: center; gap: 30px; padding: 30px; background: #fafafa; }
         .footer-tabs a { color: var(--secondary); text-decoration: none; font-size: 14px; font-weight: bold; }
     </style>
 </head>
@@ -43,41 +43,36 @@
 <header>
     <div class="checkmark">✓</div>
     <h1>Application Received!</h1>
-    <p>Thank you for choosing RandstadNV. We're excited to work with you.</p>
-    <div class="progress-container"><div class="progress-fill"></div></div>
-    <small style="opacity: 0.8;">Submission Complete</small>
+    <p>Thank you for submitting your details to the Workforce Mobility & Employment Program.</p>
 </header>
 
 <div class="container">
-    <h2 style="text-align: center;">What happens next?</h2>
+    <h2 style="text-align: center;">Next Steps</h2>
     
     <div class="grid">
         <div class="card">
-            <h3>1. Confirmation</h3>
-            <p>Check your email inbox. We've sent a detailed summary of your application for your records.</p>
+            <h3>Processing</h3>
+            <p>Your application is being considered, and you can expect a follow-up response within 14 working days.</p>
         </div>
         <div class="card">
-            <h3>2. Review</h3>
-            <p>Our specialists will review your data to match you with the best available opportunities.</p>
-        </div>
-        <div class="card">
-            <h3>3. Contact</h3>
-            <p>A representative will reach out via phone or email within <strong>24 business hours</strong>.</p>
+            <h3>Communication</h3>
+            <p>If additional details are required, we will contact you directly using the information you provided.</p>
         </div>
     </div>
 
-    <div style="text-align: center; margin-top: 40px;">
-        <p>Want to speed up the process?</p>
-        <a href="https://randstadnv.com" class="btn">Browse Open Roles</a>
+    <div class="btn-group">
+        <a href="https://randstadnv.com" class="btn btn-home">Return to Homepage</a>
+        
+        <a href="https://wa.me/?text=Check%20out%20the%20Workforce%20Mobility%20Program%20at%20RandstadNV!%20Apply%20here:%20https://randstadnv.com" 
+           class="btn btn-share" target="_blank">Share with Contacts</a>
     </div>
 </div>
 
 <div class="footer-tabs">
-    <a href="#">Support</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Contact Us</a>
+    <a href="https://randstadnv.com">Support</a>
+    <a href="https://randstadnv.com">Privacy Policy</a>
+    <a href="https://randstadnv.com">Contact Us</a>
 </div>
 
 </body>
 </html>
-
